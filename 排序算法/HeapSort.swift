@@ -70,7 +70,7 @@ func buildHeap(arr: inout [Int], isMinHeap: Bool) {
 func heapSort(arr: inout [Int], isAscending: Bool) {
     
     buildHeap(arr: &arr, isMinHeap: !isAscending)
-    print("\(isAscending ? "最大堆" : "最小堆")：\(arr)")
+//    print("\(isAscending ? "最大堆" : "最小堆")：\(arr)")
     for i in (1...(arr.count-1)).reversed() {
         arr[0] = arr[0] + arr[i]
         arr[i] = arr[0] - arr[i]

@@ -8,8 +8,17 @@
 
 import Foundation
 
-var arr = [2,1,14,11,12,3,4,5,6,7,8]
+fileprivate let arr: [Int] = [2,4,14,11,12,3,4,5,6,7,8]
 
-heapSort(arr: &arr, isAscending: false)
-print(arr)
+// 堆排序
+var heapArr = arr
+heapSort(arr: &heapArr, isAscending: true)
+print(heapArr)
 
+// 桶排序
+let newArr = bucketSort(array: arr)
+print(newArr)
+
+// 计数排序
+let countArray = countSort(arr: arr)
+print(countArray)

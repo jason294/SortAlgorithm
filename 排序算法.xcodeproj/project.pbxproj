@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962FF52123EA9F6E000B551A /* BucketSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962FF52023EA9F6E000B551A /* BucketSort.swift */; };
 		96B9EE5D23DD886D003508F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9EE5C23DD886D003508F9 /* main.swift */; };
-		96B9EE6423DD8888003508F9 /* 二叉堆.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9EE6323DD8888003508F9 /* 二叉堆.swift */; };
+		96B9EE6423DD8888003508F9 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9EE6323DD8888003508F9 /* HeapSort.swift */; };
+		96D0D39723E826DD00213093 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D0D39623E826DD00213093 /* CountSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		962FF52023EA9F6E000B551A /* BucketSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketSort.swift; sourceTree = "<group>"; };
 		96B9EE5923DD886D003508F9 /* 排序算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "排序算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B9EE5C23DD886D003508F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		96B9EE6323DD8888003508F9 /* 二叉堆.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "二叉堆.swift"; sourceTree = "<group>"; };
+		96B9EE6323DD8888003508F9 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		96D0D39623E826DD00213093 /* CountSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				96B9EE5C23DD886D003508F9 /* main.swift */,
-				96B9EE6323DD8888003508F9 /* 二叉堆.swift */,
+				96B9EE6323DD8888003508F9 /* HeapSort.swift */,
+				962FF52023EA9F6E000B551A /* BucketSort.swift */,
+				96D0D39623E826DD00213093 /* CountSort.swift */,
 			);
 			path = "排序算法";
 			sourceTree = "<group>";
@@ -124,7 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B9EE5D23DD886D003508F9 /* main.swift in Sources */,
-				96B9EE6423DD8888003508F9 /* 二叉堆.swift in Sources */,
+				962FF52123EA9F6E000B551A /* BucketSort.swift in Sources */,
+				96D0D39723E826DD00213093 /* CountSort.swift in Sources */,
+				96B9EE6423DD8888003508F9 /* HeapSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +189,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -235,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
