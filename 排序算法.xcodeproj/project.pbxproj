@@ -11,6 +11,7 @@
 		96B9EE5D23DD886D003508F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9EE5C23DD886D003508F9 /* main.swift */; };
 		96B9EE6423DD8888003508F9 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9EE6323DD8888003508F9 /* HeapSort.swift */; };
 		96D0D39723E826DD00213093 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D0D39623E826DD00213093 /* CountSort.swift */; };
+		96ED1E92243068C200AC720B /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED1E91243068C200AC720B /* BubbleSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		96B9EE5C23DD886D003508F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		96B9EE6323DD8888003508F9 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		96D0D39623E826DD00213093 /* CountSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSort.swift; sourceTree = "<group>"; };
+		96ED1E91243068C200AC720B /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				96B9EE5C23DD886D003508F9 /* main.swift */,
 				96B9EE6323DD8888003508F9 /* HeapSort.swift */,
+				96ED1E91243068C200AC720B /* BubbleSort.swift */,
 				962FF52023EA9F6E000B551A /* BucketSort.swift */,
 				96D0D39623E826DD00213093 /* CountSort.swift */,
 			);
@@ -131,6 +134,7 @@
 			files = (
 				96B9EE5D23DD886D003508F9 /* main.swift in Sources */,
 				962FF52123EA9F6E000B551A /* BucketSort.swift in Sources */,
+				96ED1E92243068C200AC720B /* BubbleSort.swift in Sources */,
 				96D0D39723E826DD00213093 /* CountSort.swift in Sources */,
 				96B9EE6423DD8888003508F9 /* HeapSort.swift in Sources */,
 			);

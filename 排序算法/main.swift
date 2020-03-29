@@ -10,6 +10,11 @@ import Foundation
 
 fileprivate let arr: [Int] = [2,4,14,11,12,3,4,5,6,7,8]
 
+// 冒泡排序
+var bubbleArray = arr
+bubbleSort(array: &bubbleArray)
+print("冒泡排序：\(bubbleArray)")
+
 // 堆排序
 var heapArr = arr
 heapSort(arr: &heapArr, isAscending: true)
