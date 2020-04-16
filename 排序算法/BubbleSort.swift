@@ -18,15 +18,42 @@ func bubbleSort(array: inout [Int]) {
     var lastChangeIndex = array.count-1
     while lastChangeIndex > 0 {
         var isSorted = true
-        for j in 0..<lastChangeIndex {
-            if array[j] > array[j+1] {
-                array[j] = array[j] + array[j+1]
-                array[j+1] = array[j] - array[j+1]
-                array[j] = array[j] - array[j+1]
-                isSorted = false
-                lastChangeIndex = j
-            }
+        for j in 0..<lastChangeIndex where exchange(array: &array, index1: j, index2: j+1, compare: >) {
+            isSorted = false
+            lastChangeIndex = j
         }
         if isSorted { break }
     }
+}
+
+/// 鸡尾酒排序
+func cocktailSort(array: inout [Int]) {
+    var leftBound = 0
+    var rightBound = array.count - 1
+    while leftBound < rightBound {
+        var isSorted = true
+        for j in leftBound..<rightBound where exchange(array: &array, index1: j, index2: j+1, compare: >) {
+            isSorted = false
+            rightBound = j
+        }
+        if isSorted { break }
+        if leftBound >= rightBound { break }
+        
+        isSorted = true
+        for j in stride(from: rightBound, to: leftBound, by: -1) where exchange(array: &array, index1: j, index2: j-1, compare: <) {
+            isSorted = false
+            leftBound = j
+        }
+        if isSorted { break }
+    }
+}
+
+func exchange(array: inout [Int], index1: Int, index2: Int, compare: ((_ num1: Int, _ num2: Int) -> Bool)) -> Bool {
+    if compare(array[index1], array[index2]) {
+        array[index1] = array[index1] + array[index2]
+        array[index2] = array[index1] - array[index2]
+        array[index1] = array[index1] - array[index2]
+        return true
+    }
+    return false
 }
